@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/fullpage.css"/>
+    <script src="vendors/easings.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+<div id="header">Bryce Larkin
+<i class="fa fa-github" href="#" style="font-size:36px; text-align: right;" ></i>
+</div>
+<section>
+    <div id="fullpage">
+        <div class="section">About
+            <div>
+                <h1>Hello and Welcome to my Page!</h1>
+                <p>I am a certfied full stack developer that developed my skills at the University of Kansas through a coding bootcamp.
+                    Check out my projects and browse my GitHub page, you can my find all my contact information as well.
+                    Thanks for looking.
+                </p>
+            </div>
+        </div>
+        <div class="section" style="color: black";>Projects
+        <h2>Here are the projects I have worked hard on</h2>
+        <p2>Here I have my best work on display. Some are solo projects and others are collaborative projects. Feel free to also see my my GitHub page.</p2>
+        </div>
+        <div class="section" style="align-content: space-between;">Contact
+            <ul>
+                <a href="https://blarkin13@gmail.com">Email</a>
+                <a href="https://github.com/brycelarkin13">GitHub</a>
+                <a>LinkedIn</a>
+           </ul>
+        </div>
+        
+    </div>
+</section>
+    
+    <script type="text/javascript" src="./node_modules/fullpage.js/dist/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['Black', 'white', 'RoyalBlue',],
+            menu: '#menu',
+	        lockAnchors: false,
+	        anchors:['firstPage', 'secondPage', 'thirdPage'],
+	        navigation: true,
+	        navigationPosition: 'right',
+	        navigationTooltips: ['About', 'Projects', 'Contact'],
+	        showActiveTooltip: false,
+	        slidesNavigation: true,
+	        slidesNavPosition: 'bottom',
+            paddingTop: '3em',
+            paddingBottom: '10px',
+            fiexedElements: '#header',
+            
+            
+            });
+    </script>
+</body>
+</html>
